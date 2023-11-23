@@ -11,6 +11,11 @@ const ROUTES_CONFIG: Routes = [
     path: 'blog',
     component: BlogMainComponent,
   },
+  {
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full'
+  }
 ];
 
 export default ROUTES_CONFIG;

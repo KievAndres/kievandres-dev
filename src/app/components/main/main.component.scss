@@ -1,0 +1,71 @@
+.foto-perfil {
+  width: 100%;
+  width: clamp(30px, 60vw, 350px);
+  height: auto;
+  border-radius: 50%;
+}
+
+.contenedor-presentacion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 80vw;
+  margin: auto;
+}
+
+.contenedor-presentacion-texto {
+  background: #233a4e;
+  color: #e2e1e1;
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  padding: 1.5em;
+}
+@media (max-width: 800px) {
+  .contenedor-presentacion-texto {
+    padding: .6em;
+  }
+}
+.sub-titulo {
+  font-weight: 400;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 0.2em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social-media-button {
+  cursor: pointer;
+  color: #fff;
+  border: 0;
+  padding: .4em .7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  border-radius: 5px;
+}
+.social-media-button-text {
+  margin-left: .3em;
+}
+
+#github {
+  background-color: #24292f;
+}
+#facebook {
+  background-color: #1773ea;
+  color: #f7f7f7;
+}
+#twitter {
+  background-color: #5ca4d6;
+}
+#linkedin {
+  background-color: #0270ad;
+}
+#instagram {
+  background-color: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  color: #f5f7f7;
+}
