@@ -1,0 +1,39 @@
+@use 'styles/variables' as *;
+@use 'styles/mixins' as mx;
+@use 'styles/utilities';
+
+.header {
+  @extend .glass-card;
+  border-bottom: 1px solid rgba(0,255,255,.25);
+}
+
+.title {
+  @include mx.neon-text($neon-blue, 14px);
+  animation: glow-alternate 3s ease-in-out infinite alternate;
+}
+
+.cta {
+  @include mx.neon-button($neon-blue, $neon-cyan);
+}
+
+.card {
+  @extend .glass-card;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.08), transparent);
+    transform: translateX(-120%);
+    animation: sweep .9s ease forwards;
+  }
+
+  &:hover {
+    @include mx.neon-glow($neon-blue, med);
+  }
+}
+
+@media (max-width: $bp-md) {
+  .title { text-shadow: 0 0 10px $neon-blue; }
+}
