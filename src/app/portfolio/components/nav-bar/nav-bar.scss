@@ -2,7 +2,7 @@
 @use 'styles/variables' as *;
 
 .nav-bar {
-  font-family: 'Jane Regular';
+  font-family: 'Jane Regular' system-ui;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid $border-gray;
@@ -10,6 +10,6 @@
 
   .main-text {
     // font-weight: bold;
-    font-size: 2em;
+    font-size: 1.2em;
   }
 }
