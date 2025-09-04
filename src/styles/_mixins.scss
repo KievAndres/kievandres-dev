@@ -1,0 +1,41 @@
+@use 'variables' as *;
+
+// Elements glow (box-shadow)
+@mixin neon-glow($color, $intensity: med) {
+  @if $intensity == weak { box-shadow: #{glow-weak} #{color}; }
+  @else if $intensity == med { box-shadow: #{$glow-med} #{$color}; }
+  @else if $intensity == strong { box-shadow: #{glow-strong} #{color}; }
+}
+
+@mixin neon-text($color, $blur: 10px) {
+  color: $color;
+  text-shadow: 0 0 $blur $color;
+}
+
+@mixin neon-border($color, $width: 2px, $radius: 12px) {
+  border: $width solid $color;
+  border-radius: $radius;
+  @include neon-glow($color, weak);
+}
+
+@mixin neon-button($from, $to) {
+  background: linear-gradient(45deg, $from, $to);
+  color: $text-white;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-weight: 600;
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  @include neon-glow($from, med);
+
+  &:hover {
+    transform: translateY(-2px);
+    @include neon-glow($from, strong);
+    filter: brightness(1.05);
+  }
+}
+
+// Dark gradient background
+@mixin neon-dark-bg() {
+  background: linear-gradient(135deg, $bg-dark 0%, $bg-darker 60%, #1a0a2e 100%);
+}

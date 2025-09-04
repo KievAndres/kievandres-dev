@@ -1,0 +1,14 @@
+@keyframes glow-alternate {
+  0%    { filter: drop-shadow(0 0 12px #00ffff); }
+  100%  { filter: drop-shadow(0 0 18px #8a2be2); }
+}
+
+@keyframes sweep {
+  0%    { transform: translateX(-120%); }
+  100%  { transform: translateY(120%); }
+}
+
+@keyframes dot-pulse {
+  0%, 100%  { opacity: .35; transform: scale(1); }
+  50%       { opacity: 1; transform: scale(1.2); }
+}

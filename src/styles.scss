@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'styles/variables';
+@use 'styles/mixins';
+@use 'styles/animations';
+@use 'styles/utilities';
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -19,7 +23,8 @@
 }
 
 body {
-  background-color: #13131d;
+  @include mixins.neon-dark-bg();
+  color: $text-white;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }

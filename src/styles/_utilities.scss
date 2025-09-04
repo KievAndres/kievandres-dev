@@ -1,0 +1,26 @@
+@use 'variables' as *;
+@use 'mixins' as mixins;
+
+// Text
+.neon-text--blue    { @include mixins.neon-text($neon-blue); }
+.neon-text--purple  { @include mixins.neon-text($neon-purple); }
+.neon-text--pink    { @include mixins.neon-text($neon-pink); }
+
+// Borders
+.neon-border--blue    { @include mixins.neon-border($neon-blue); }
+.neon-border--purple  { @include mixins.neon-border($neon-purple); }
+.neon-border--pink    { @include mixins.neon-border($neon-pink); }
+
+// Buttons
+.btn-neon-primary { @include mixins.neon-button($neon-blue, $neon-cyan); }
+.btn-neon-accent { @include mixins.neon-button($neon-purple, $neon-pink); }
+
+.glass-card {
+  background: rgba(26, 26, 46, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 255, 0.18);
+  border-radius: 16px;
+}
+
+// Base background
+.app-neon-bg { @include mixins.neon-dark-bg(); }
