@@ -18,24 +18,14 @@
   @include neon-glow($color, weak);
 }
 
-@mixin neon-button($from, $to) {
-  background: linear-gradient(45deg, $from, $to);
-  color: $text-white;
-  border: 0;
-  border-radius: 10px;
-  padding: 12px 20px;
-  font-weight: 600;
-  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
-  @include neon-glow($from, med);
-
-  &:hover {
-    transform: translateY(-2px);
-    @include neon-glow($from, strong);
-    filter: brightness(1.05);
-  }
+@mixin button($bg-color, $text-color) {
+  background: $bg-color;
+  color: $text-color;
+  padding: .1em 0.7em;
+  border-radius: 0.7em;
 }
 
 // Dark gradient background
 @mixin neon-dark-bg() {
-  background: #12121a;
+  background: $bg-dark;
 }

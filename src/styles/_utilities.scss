@@ -2,18 +2,20 @@
 @use 'mixins' as mixins;
 
 // Text
-.neon-text--blue    { @include mixins.neon-text($neon-blue); }
+.neon-text--blue    { @include mixins.neon-text($neon-cyan); }
 .neon-text--purple  { @include mixins.neon-text($neon-purple); }
 .neon-text--pink    { @include mixins.neon-text($neon-pink); }
 
+.txt-primary { color: $text-white; }
+.txt-secondary { color: $text-gray; }
+
 // Borders
-.neon-border--blue    { @include mixins.neon-border($neon-blue); }
+.neon-border--blue    { @include mixins.neon-border($neon-cyan); }
 .neon-border--purple  { @include mixins.neon-border($neon-purple); }
 .neon-border--pink    { @include mixins.neon-border($neon-pink); }
 
 // Buttons
-.btn-neon-primary { @include mixins.neon-button($neon-blue, $neon-cyan); }
-.btn-neon-accent { @include mixins.neon-button($neon-purple, $neon-pink); }
+.btn-primary { @include mixins.button($neon-cyan, $bg-dark); }
 
 .glass-card {
   background: rgba(26, 26, 46, 0.75);
