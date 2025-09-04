@@ -6,8 +6,8 @@
 .neon-text--purple  { @include mixins.neon-text($neon-purple); }
 .neon-text--pink    { @include mixins.neon-text($neon-pink); }
 
-.txt-primary { color: $text-white; }
-.txt-secondary { color: $text-gray; }
+.txt-primary { color: $txt-white; }
+.txt-secondary { color: $txt-gray; }
 
 // Borders
 .neon-border--blue    { @include mixins.neon-border($neon-cyan); }
@@ -15,7 +15,7 @@
 .neon-border--pink    { @include mixins.neon-border($neon-pink); }
 
 // Buttons
-.btn-primary { @include mixins.button($neon-cyan, $bg-dark); }
+.btn-primary { @include mixins.button($neon-cyan, $txt-green); }
 
 .glass-card {
   background: rgba(26, 26, 46, 0.75);
