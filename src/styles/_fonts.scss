@@ -15,17 +15,17 @@
 }
 
 @font-face {
-  font-family: 'Jane Caps Bold';
-  src: url('/assets/fonts/jane-caps-bold.woff2') format('woff2');
+  font-family: 'Jane Regular';
+  src: url('/assets/fonts/jane-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Jane Regular';
-  src: url('/assets/fonts/jane-regular.woff2') format('woff2');
-  font-weight: 400;
+  font-family: 'Bushman Sans Thin';
+  src: url('/assets/fonts/bushman-sans-thin.woff2') format('woff2');
+  font-weight: lighter;
   font-style: normal;
   font-display: swap;
 }

@@ -7,7 +7,10 @@
 .neon-text--pink    { @include mixins.neon-text($neon-pink); }
 
 .txt-primary { color: $txt-white; }
-.txt-secondary { color: $txt-gray; }
+.txt-secondary {
+  color: $txt-gray;
+  // font-family: 'Bushman Sans Thin', system-ui;
+}
 
 // Borders
 .neon-border--blue    { @include mixins.neon-border($neon-cyan); }
