@@ -4,7 +4,7 @@
 // Text
 .neon-text--blue    { @include mixins.neon-text($neon-cyan); }
 .neon-text--purple  { @include mixins.neon-text($neon-purple); }
-.neon-text--pink    { @include mixins.neon-text($neon-pink); }
+.neon-text--pink    { @include mixins.neon-text($neon-magenta); }
 
 .txt-primary { color: $txt-white; }
 .txt-secondary {
@@ -15,7 +15,7 @@
 // Borders
 .neon-border--blue    { @include mixins.neon-border($neon-cyan); }
 .neon-border--purple  { @include mixins.neon-border($neon-purple); }
-.neon-border--pink    { @include mixins.neon-border($neon-pink); }
+.neon-border--pink    { @include mixins.neon-border($neon-magenta); }
 
 // Buttons
 .btn-primary { @include mixins.button($neon-cyan, $txt-green); }
