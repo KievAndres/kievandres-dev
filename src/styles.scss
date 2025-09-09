@@ -29,7 +29,9 @@ html, body {
 }
 
 body {
+  // background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
   @include mixins.neon-dark-bg();
+
   color: $txt-white;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;

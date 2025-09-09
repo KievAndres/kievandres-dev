@@ -29,5 +29,6 @@
 
 // Dark gradient background
 @mixin neon-dark-bg() {
-  background: $bg-dark;
+  // background: $bg-dark;
+  background: linear-gradient(135deg, $bg-dark 0%, #1a1a2e 50%, #16213e 100%);
 }
