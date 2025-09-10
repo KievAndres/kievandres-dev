@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { StellarCube } from "@/app/shared/components/stellar-cube/stellar-cube";
-import { StellarBackground } from "@/app/shared/components/stellar-background/stellar-background";
+import { Presentation } from "../../components/presentation/presentation";
 
 @Component({
   selector: 'main-page',
-  imports: [StellarCube, StellarBackground],
+  imports: [Presentation],
   templateUrl: './main-page.html',
   styleUrl: './main-page.scss',
 })

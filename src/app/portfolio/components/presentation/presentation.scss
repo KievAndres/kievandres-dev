@@ -1,0 +1,26 @@
+@use 'styles/variables' as *;
+
+.presentation {
+  height: calc(100dvh - #{$nav-bar-height});
+  padding: 7rem 0;
+  display: flex;
+  gap: 1em;
+
+  &-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.1em;
+  }
+}
+
+.portfolio-title {
+  font-size: 5em;
+  line-height: 1;
+}
+
+.portfolio-subtitle {
+  font-family: 'Jane Regular';
+  font-size: 1.6em;
+}
