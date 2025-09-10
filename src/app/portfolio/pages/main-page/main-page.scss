@@ -1,29 +1,4 @@
-// Background
-$bg-dark: #12121a;
-
-// Neon colors
-$neon-cyan: #5ff1e3;
-$neon-magenta: #ff00ff;
-$neon-purple: #8a2be2;
-$neon-pink: #ff1493;
-
-// Fondo con partículas neon
-.neon-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
-  overflow: hidden;
-}
-
-
-// Asegurar que el contenido esté por encima del fondo
 .presentation {
-  position: relative;
-  z-index: 1;
   display: flex;
   gap: 1em;
 
