@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Particles } from "../../../shared/components/neon/particles/particles";
-import { Sparkles } from "../../../shared/components/neon/sparkles/sparkles";
+import { Particles } from "@shared/components/particles/particles";
+import { Sparkles } from "@shared/components/sparkles/sparkles";
 
 @Component({
   selector: 'main-page',
