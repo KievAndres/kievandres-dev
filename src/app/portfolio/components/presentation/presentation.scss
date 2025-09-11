@@ -7,10 +7,12 @@ $presentation-margin-bottom: 1.8rem;
   margin: $presentation-margin-top 0;
   display: flex;
   gap: 1em;
-  background: #00000070;
-  // background: linear-gradient(281deg, black 0%, black 48%, transparent);
-  padding: 1.5rem;
-  backdrop-filter: blur(3px);
+  padding: 0 2rem;
+  background-image: url('/assets/images/setup.webp');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0,0,0,.71);
+  background-blend-mode: multiply;
 
   &-item {
     flex: 1;
