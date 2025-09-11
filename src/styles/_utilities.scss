@@ -29,3 +29,15 @@
 
 // Base background
 .app-neon-bg { @include mixins.neon-dark-bg() }
+
+// Borders
+.border {
+  border: 1px solid $border-gray;
+}
+.border-radius {
+  border-radius: 15px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $border-gray;
+}
