@@ -1,6 +1,6 @@
 @use 'styles/variables' as *;
 $presentation-margin-top: 2.5rem;
-$presentation-margin-bottom: 2rem;
+$presentation-margin-bottom: 1.8rem;
 
 .presentation {
   height: calc(100dvh - #{$nav-bar-height} - ($presentation-margin-top + $presentation-margin-bottom));
@@ -8,6 +8,7 @@ $presentation-margin-bottom: 2rem;
   display: flex;
   gap: 1em;
   background: #00000070;
+  // background: linear-gradient(281deg, black 0%, black 48%, transparent);
   padding: 1.5rem;
   backdrop-filter: blur(3px);
 
@@ -48,6 +49,7 @@ $presentation-margin-bottom: 2rem;
 }
 
 .portfolio-subtitle {
-  font-family: 'Jane Regular';
+  font-family: monospace;
   font-size: 1.6em;
+  font-style: italic;
 }
