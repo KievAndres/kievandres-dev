@@ -1,0 +1,72 @@
+@use 'styles/variables' as *;
+$presentation-margin-top: 2.5rem;
+$presentation-margin-bottom: 1.8rem;
+
+.presentation {
+  height: calc(100dvh - #{$nav-bar-height});
+  display: grid;
+  grid-template-rows: 2fr 1fr 0.3fr;
+
+  &-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .text {
+    display: grid;
+    background: linear-gradient(167deg, black 0, black 20%, transparent);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(1px);
+    grid-template-columns: 1fr 2.3fr;
+
+    .animation-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .stellar-cube {
+        max-width: 6em;
+        margin: 0 auto;
+      }
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      justify-content: center;
+    }
+  }
+
+  .image {
+    background-image: url('/assets/images/setup.webp');
+    background-size: auto;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.71);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      aspect-ratio: 611 / 640;
+    }
+  }
+}
+
+.portfolio-title {
+  font-size: 2.5em;
+  line-height: 1;
+}
+
+.portfolio-subtitle {
+  font-family: monospace;
+  font-size: 1.6em;
+  font-style: italic;
+}

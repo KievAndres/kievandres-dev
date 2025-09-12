@@ -2,5 +2,9 @@
 
 .portfolio-content {
   padding: 0 $padding-x-main;
-  // margin-top: 2.8rem;
+
+  @media screen and (max-width: $sm-device) {
+    padding: 0;
+  }
 }
+

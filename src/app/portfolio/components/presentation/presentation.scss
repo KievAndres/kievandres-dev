@@ -1,58 +1,18 @@
 @use 'styles/variables' as *;
-$presentation-margin-top: 2.5rem;
-$presentation-margin-bottom: 1.8rem;
-
-.presentation {
-  height: calc(100dvh - #{$nav-bar-height} - ($presentation-margin-top + $presentation-margin-bottom));
-  margin: $presentation-margin-top 0;
-  display: flex;
-  gap: 1em;
-  padding: 0 2rem;
-  background-image: url('/assets/images/setup.webp');
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0,0,0,.71);
-  background-blend-mode: multiply;
-
-  &-item {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 1.1em;
+@media screen and (max-width: $sm-device) {
+  .presentation-desktop {
+    display: none;
   }
-
-  .text {
-    justify-content: center;
-    .stellar-cube {
-      max-width: 200px;
-      margin: 0 auto;
-    }
-  }
-
-  .image {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      aspect-ratio: 611 / 640;
-    }
+  .presentation-mobile {
+    display: block;
   }
 }
 
-.portfolio-title {
-  font-size: 5em;
-  line-height: 1;
-}
-
-.portfolio-subtitle {
-  font-family: monospace;
-  font-size: 1.6em;
-  font-style: italic;
+@media screen and (min-width: $sm-device) {
+  .presentation-desktop {
+    display: block;
+  }
+  .presentation-mobile {
+    display: none;
+  }
 }
